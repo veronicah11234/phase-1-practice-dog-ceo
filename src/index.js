@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         for (const breed in data.message) {
 
           const breedItem = document.createElement('li');
+          breedItem.id = "listItem"
 
           breedItem.textContent = breed;
 
@@ -48,6 +49,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (event.target.tagName === 'LI') {
         event.target.style.color = 'red'; 
+        event.target.style.backgroundColor = 'white'; 
+
       }
     });
   
